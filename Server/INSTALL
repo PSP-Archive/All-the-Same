@@ -1,0 +1,11 @@
+
+Linux/Unix:     Type "make".
+Windows/Cygwin: Type "make".
+MacOSX:         Try "make".
+Others:         No idea. :( Does "make" work? Visual C++ might need something else...
+
+Cygwin:         http://www.cygwin.com/
+
+...
+
+Note that the server is run on a PC / Unix box.

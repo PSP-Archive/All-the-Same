@@ -1,0 +1,68 @@
+
+-----------------------------------------------------------------------
+-                          All the Same                               -
+-                             README                                  -
+-----------------------------------------------------------------------
+
+
+1. DESCRIPTION
+
+All the Same is yet another minimalistic multiplatform game framework
+written in C. It's simple yet gives you most of the things you need
+to write small games. And you gain instant ports to PSP, Windows and
+Linux (more to come).
+
+
+2. TODO
+
+* More functions
+* Port All the Same to new platforms
+* A real documentation (API and usage)
+* Optimizations
+* C++?
+
+
+3. REQUIREMENTS
+
+All the Same is based on many other libraries. Here's what you need:
+
+Linux & Win32:
+* SDL (http://www.libsdl.org)
+* OpenGL
+* OpenAL, alut (http://www.openal.org)
+* libvorbis, libvorbisfile, libogg (http://vorbis.com)
+
+PSP:
+* The PSP devkit from ps2dev.org (http://ps2dev.org)
+
+
+4. USAGE
+
+Go to the Linux / PSP directory and issue "make". It will compile the
+test project. Currently there is no more documentation than this,
+so you are on your own, sorry. Check out the sources of Robots of
+Kill for more tips.
+
+To create your own game, add more files to the projects. Start by
+extending General/src/game.c, as that's where the user side of the
+application is. You shouldn't touch any other C file, but of course can. :)
+
+Note that the networking code doesn't work on PSP at the moment.
+
+
+5. CONTACT
+
+If you have any questions, feel free to contact me at
+vhelin#iki.fi.
+
+
+6. LEGAL STUFF
+
+You use this on your own risk. I don't take responsibility for anything.
+
+All the Same is released under the LGPL license. See the file LICENSE
+for more information about the license.
+
+Note that the LGPL licence applies only to the source code, not to the
+graphics or the music files. I.e., you don't have the rights to reuse the
+graphics or the music files. 

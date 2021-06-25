@@ -1,0 +1,34 @@
+
+-----------------------------------------------------------------------
+-                          All the Same                               -
+-                            CHANGELOG                                -
+-----------------------------------------------------------------------
+
+v0.8 (17-Jul-2007)
+ * The PSP version will start in usermode. I couldn't get the network
+   module to work in the kernel mode either, and running the app in
+   kernel mode caused other things go bad.
+ * Added push and pop matrix calls to all video drawing functions.
+ * Removed videoLoadIdentity() calls from the sprite drawing
+   functions.
+ * Removed as videoDrawRectangle2DWithPosition() as it can be
+   done with videoDrawRectangle2D().
+ * Updated the examples (Linux and PSP), they should be pretty
+   clear now. Removed all references from code to Robots of Kill.
+
+v0.7 (11-Jul-2007)
+ * Removed videoDrawTriangle() as it can be done with other
+   functions.
+ * Gave better names to all the vertex formats and mesh drawing
+   functions.
+ * Made SDL main.c use the API, not poke the video values directly.
+ * Added videoEnable() and videoDisable().
+ * videoSetColor() doesn't enable/disable blending any more.
+ * Removed PSP/src/file.c as Posix file i/o works fine on PSP.
+ * Moved the message management from the networking subsystem to the
+   game side (i.e., completely changed the network API).
+ * Cleaned up the PSP version.
+
+v0.6 (07-Jul-2007)
+ * Initial release. GBAX2007 competition entry. Will be released to
+   public later after the competition is over.
